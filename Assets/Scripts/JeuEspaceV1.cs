@@ -8,9 +8,12 @@ public class JeuEspaceV1 : MonoBehaviour
 {
     public int etoiles = 0;
 
+        [SerializeField] AudioSource audio;
+
+
     void Start()
     {
-        // DontDestroyOnLoad(gameObject);
+         DontDestroyOnLoad(gameObject);
     }
 
     public void ChangerScene(int indexScene)
